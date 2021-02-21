@@ -1,0 +1,5 @@
+Answer to Question 1:
+The procedure will crash because in the process of computing the q and z arrays in each iteration we are using each of
+of the old data we had of q and z. Due to the given formula's structure, if a whole segment's pixels amount is 0, while
+computing the initial q values, we will be forced to divide by zero (because sum of p(z) in the segment equals 0).
+This is the reason each segment's number of pixels must be greater than 0.
